@@ -5,8 +5,8 @@ import styles from './LanguageSwitcher.module.css'
 
 export default function LanguageSwitcher() {    
 
-    const flagWidth = 42;
-    const flagHeight = 32;
+    const flagWidth: number = 42;
+    const flagHeight: number = 32;
 
     return (
         <div className={styles.Wrapper}>
