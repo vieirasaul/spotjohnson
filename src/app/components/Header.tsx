@@ -1,22 +1,29 @@
+'use client';
+
 import Link from 'next/link'
 import styles from './Header.module.css'
 import { Roboto_Mono } from 'next/font/google'
-import { getDictionary } from '../[lang]/dictionaries'
+import { useTranslations } from 'next-intl';
+import LanguageSwitcher from './LanguageSwitcher'
 
 const roboto_mono = Roboto_Mono({
     subsets: ['latin'],
     weight: ['400', '700']
 })
 
-export default async function Header({ params }: { params: { lang: string } }) {
-    const dict = await getDictionary(params.lang)
+export default function Header() {
+    const t = useTranslations('nav');
+
     return (
         <header className={`${roboto_mono.className} ${styles.Header}`}>
             <nav className={styles.Nav}>
-                <Link href="/">{dict.nav.home}</Link>
-                <Link href="/">{dict.nav.about}</Link>
-                <Link href="/">{dict.nav.contact}</Link>
+                <Link href="/">{t('home')}</Link>
+                <Link href="/">{t('about')}</Link>
+                <Link href="/">{t('contact')}</Link>
             </nav>
+            <div>
+                <LanguageSwitcher />
+            </div>
         </header>
     );
 }
