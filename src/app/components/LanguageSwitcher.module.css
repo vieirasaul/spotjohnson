@@ -1,3 +1,11 @@
+.Wrapper {
+    display: flex;
+}
+
+.Wrapper a {
+    display: flex;
+}
+
 .Wrapper a:not(:last-child) {
     margin-right: 10px;
 }

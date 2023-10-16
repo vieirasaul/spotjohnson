@@ -1,4 +1,3 @@
-'use client'
 import Link from 'next-intl/link';
 import Image from 'next/image'
 import styles from './LanguageSwitcher.module.css'
@@ -37,5 +36,3 @@ export default function LanguageSwitcher() {
         </div>
     );
 }
-
-
