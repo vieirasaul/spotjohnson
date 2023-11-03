@@ -3,5 +3,9 @@
     "home": "Home",
     "about": "About",
     "contact": "Contact"
+  },
+  "main": {
+    "title": "Spotjohnson",
+    "subtitle": "Spotify data presentation"
   }
 }

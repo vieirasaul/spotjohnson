@@ -3,5 +3,9 @@
     "home": "Comenzar",
     "about": "Acerca",
     "contact": "Contacto"
+  },
+  "main": {
+    "title": "Spotjohnson",
+    "subtitle": "Presentación de datos de Spotify"
   }
 }
